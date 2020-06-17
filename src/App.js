@@ -1,9 +1,13 @@
-import React from 'react';
-import './App.css';
-import CounterExample from './CounterExample';
+import React, { useState } from 'react';
 
-function App() {
-  return <div>{<CounterExample />}</div>;
-}
+export default () => {
+  const [count, setCount] = useState(0);
 
-export default App;
+  return (
+    <div>
+      <h1>{count}</h1>
+      <button onClick={() => setCount(count + 1)}>Plus</button>
+      <button onClick={() => setCount(count - 1)}>minus</button>
+    </div>
+  );
+};
