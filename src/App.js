@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function CounterExample() {
+const App = () => {
   const [count, setCount] = useState(0);
 
   return (
@@ -10,5 +10,5 @@ function CounterExample() {
       <button onClick={() => setCount(count - 1)}>minus</button>
     </div>
   );
-}
-export default CounterExample;
+};
+export default App;
