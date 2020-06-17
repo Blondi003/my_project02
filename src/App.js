@@ -2,8 +2,6 @@ import React from 'react';
 import './App.css';
 import CounterExample from './CounterExample';
 
-function App() {
-  return <div>{<CounterExample />}</div>;
-}
+function App() {}
 
 export default App;
